@@ -1747,7 +1747,7 @@ write_dnsmasq_conf() {
 		except-interface=lo
 		no-dhcp-interface=lo
 		dhcp-range=${GATEWAY%.*}.10,${GATEWAY%.*}.250,255.255.255.0
-		dhcp-option-force=option:router,${GATEWAY}
+		# dhcp-option-force=option:router,${GATEWAY}
 		dhcp-option=3
                 #log-dhcp
 		log-facility=$CONFDIR/dnsmasq.log
